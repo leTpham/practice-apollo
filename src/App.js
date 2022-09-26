@@ -2,12 +2,17 @@ import './App.css';
 
 import UserList from './UserList';
 import MessageList from './MessageList';
+import AddUserForm from './AddUserForm';
+import AddMessageForm from './AddMessageForm'
+
 
 function App() {
   return (
     <div className="App">
-      {/* <UserList /> */}
+      <AddUserForm />
+      <AddMessageForm />
       <MessageList username="cattttts" />
+      <UserList />
     </div>
   );
 }
