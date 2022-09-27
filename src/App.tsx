@@ -1,17 +1,17 @@
 import './App.css';
 
 import UserList from './UserList';
-import MessageList from './MessageList';
-import AddUserForm from './AddUserForm';
-import AddMessageForm from './AddMessageForm'
+// import MessageList from './MessageList';
+// import AddUserForm from './AddUserForm';
+// import AddMessageForm from './AddMessageForm'
 
 
 function App() {
   return (
     <div className="App">
-      <AddUserForm />
+      {/* <AddUserForm />
       <AddMessageForm />
-      <MessageList username="cattttts" />
+      <MessageList username="cattttts" /> */}
       <UserList />
     </div>
   );

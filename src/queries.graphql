@@ -3,3 +3,11 @@ query GetUsers {
         username
     }
 }
+
+  query GetMessages ($username: ID!){
+    user (username: $username) {
+      messages {
+        body
+      }
+    }
+  }

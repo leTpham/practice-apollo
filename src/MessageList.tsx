@@ -1,30 +1,22 @@
-import { useQuery, gql } from '@apollo/client';
+// import { useQuery, gql } from '@apollo/client';
 
-const GET_MESSAGES = gql`
-  query GetMessages ($username: ID!){
-    user (username: $username) {
-      messages {
-        body
-      }
-    }
-  }
-  `;
 
-function MessageList({ username }) {
-  const { loading, error, data } = useQuery(GET_MESSAGES, {
-    variables: { username },
-  });
 
-  if (loading) return null;
-  if (error) return `Error! ${error}`;
+// function MessageList({ username }) {
+//   const { loading, error, data } = useQuery(GET_MESSAGES, {
+//     variables: { username },
+//   });
 
-  return (
-    <div>{data.user.messages.map(({ body },idx) => (
-      <p key={idx}> {body}</p>
-    ))}
-    </div>
-  );
-}
+//   if (loading) return null;
+//   if (error) return `Error! ${error}`;
 
-export default MessageList;
+//   return (
+//     <div>{data.user.messages.map(({ body },idx) => (
+//       <p key={idx}> {body}</p>
+//     ))}
+//     </div>
+//   );
+// }
+
+// export default MessageList;
 
